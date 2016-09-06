@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I6f-VQ-4WU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0C-Ev-zED">
+                                <rect key="frame" x="97" y="124" width="180" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Cum-DD-3vF"/>
+                                    <constraint firstAttribute="height" constant="30" id="lCc-3L-UhF"/>
+                                </constraints>
+                                <state key="normal" title="浏览webView图片">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="webClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHY-C4-SgA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDz-RB-Bh4">
+                                <rect key="frame" x="112" y="214" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="JfV-Ig-8n1"/>
+                                    <constraint firstAttribute="height" constant="30" id="OQZ-GU-BkI"/>
+                                </constraints>
+                                <state key="normal" title="浏览ImageView">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="imageClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t5N-iO-AXb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qDz-RB-Bh4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L9v-dc-N11"/>
+                            <constraint firstItem="f0C-Ev-zED" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bsV-3P-ozo"/>
+                            <constraint firstItem="f0C-Ev-zED" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="jlp-EV-Jg1"/>
+                            <constraint firstItem="qDz-RB-Bh4" firstAttribute="top" secondItem="f0C-Ev-zED" secondAttribute="bottom" constant="60" id="vBy-p0-n35"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sn6-6k-yIo"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.5" y="114.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cpt-U1-Xrj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I6f-VQ-4WU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UOr-mR-Dc2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="luk-Yx-XcS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xY9-ln-Eww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="-528"/>
+        </scene>
+    </scenes>
+</document>
