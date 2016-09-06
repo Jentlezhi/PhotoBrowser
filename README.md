@@ -3,7 +3,6 @@
 #####使用示例:
 * 1、#import "MJPhoto.h"
 * 2、#import "MJPhotoBrowser.h"
-* 3、配置环境变量。 xcode中 Edit Scheme->Environment Variables中添加 key = XcodeColor value = YES\n4、自定义颜色，详情见HCLog.h文件
 
 
 #####浏览ImageView:
